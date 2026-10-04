@@ -1,0 +1,31 @@
+{
+  "name": "henil-parmar-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build --webpack",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@react-three/fiber": "latest",
+    "gsap": "latest",
+    "lucide-react": "latest",
+    "next": "16.3.8",
+    "react": "latest",
+    "react-dom": "latest",
+    "three": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/three": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "16.3.8",
+    "prettier": "3.9.9",
+    "typescript": "latest"
+  }
+}
