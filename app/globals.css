@@ -1676,3 +1676,19 @@ thead {
     font-size: 8px;
   }
 }
+
+.origin-story {
+  margin: 2.5rem 0;
+  padding: 1.5rem 0 1.5rem 1.5rem;
+  border-left: 2px solid var(--accent, #d5ff55);
+}
+.origin-story blockquote {
+  margin: 1.25rem 0;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
+  line-height: 1.6;
+  color: #eef0e8;
+}
+.origin-story strong {
+  color: #eef0e8;
+  font-weight: 500;
+}

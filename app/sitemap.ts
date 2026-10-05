@@ -2,10 +2,7 @@ import type { MetadataRoute } from "next";
 import { projects, projectHref } from "@/data/projects";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base =
-    process.env.NEXT_PUBLIC_SITE_URL ||
-    (process.env.VERCEL_PROJECT_PRODUCTION_URL
-      ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-      : "http://localhost:3000");
+    process.env.NEXT_PUBLIC_SITE_URL || "https://henilparmar1208.vercel.app";
   return [
     "",
     "/work",

@@ -4,6 +4,7 @@ import { Cinematic } from "@/components/cinematic";
 import { FeaturedProjects, Archive } from "@/components/projects";
 import { Experience } from "@/components/experience";
 import { EngineeringLab } from "@/components/engineering-lab";
+export const metadata = { alternates: { canonical: "/" } };
 export default function Home() {
   return (
     <main id="main">

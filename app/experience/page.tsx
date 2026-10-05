@@ -44,7 +44,26 @@ export default function Page() {
             <p>
               Department Academic Mentor Program. Academic and social guidance
               for second-year students; recognized as Best DAMP Mentor among 28
-              peers in 2026.
+              peers in 2026. Now serving as Sub-Group Head of Policies,
+              supporting the Aerospace Engineering curriculum.
+            </p>
+          </article>
+          <article>
+            <span>2023–24</span>
+            <h3>System Administrator</h3>
+            <p>
+              Hostel 16 Council, IIT Bombay. Coordinated wireless and LAN
+              infrastructure with the Computer Centre and supported more than
+              1,000 residents.
+            </p>
+          </article>
+          <article>
+            <span>ACADEMIC & COMMUNITY SUPPORT</span>
+            <h3>Peer learning</h3>
+            <p>
+              ASP/ARP mentor supporting students with core backlogs. Academic
+              Coach at Vidhyadaan supporting more than 20 young people,
+              alongside academic volunteering with NSS.
             </p>
           </article>
         </div>

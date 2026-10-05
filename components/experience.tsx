@@ -2,10 +2,10 @@ import Link from "next/link";
 export const experience = [
   {
     year: "2026",
-    date: "JUN — JUL",
+    date: "JUN — AUG",
     name: "Airbus Defence and Space",
     role: "Aerospace Engineering Intern · C295 Programme",
-    body: "Final Assembly Line exposure in Vadodara: station workflows, aircraft systems integration, assembly quality and configuration management.",
+    body: "C295 Final Assembly Line in Vadodara: station workflows, systems integration, assembly quality, lean manufacturing and coordination across Engineering and Quality teams.",
   },
   {
     year: "2025",

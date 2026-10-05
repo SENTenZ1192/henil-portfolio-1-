@@ -42,6 +42,10 @@ export const projects: Project[] = [
         body: "The Python model combines quadratic drag and downforce, power and tractive-force limits, quasi-static load transfer and load-sensitive tyre-force constraints. Degree-three Radau direct collocation turns the trajectory problem into a nonlinear program solved with CasADi and IPOPT.",
       },
       {
+        title: "The original benchmark.",
+        body: "The November–December 2025 project covered six circuit centerlines. The revised résumé records an uncalibrated comparison with 2021 Monza telemetry: +6.28% lap-time error and 24.29 km/h speed RMSE. The V2.1 figures below belong to a separate, later four-circuit study using 2023 telemetry; they are not the same benchmark.",
+      },
+      {
         title: "Calibrate once. Evaluate elsewhere.",
         body: "V2.1 uses 2023 qualifying telemetry. Monza and Silverstone are calibration circuits; a frozen generic vehicle is then evaluated on Bahrain and Suzuka without retuning. Four predeclared candidates vary power and tyre grip by 0 or +5%. The study separates numerical feasibility from empirical agreement.",
       },
@@ -89,7 +93,7 @@ export const projects: Project[] = [
       },
       {
         title: "What has actually run.",
-        body: "The committed Monza experiment covers 60 seconds and multiple corners, with sub-2 m RMS lateral error and zero track-limit violations. Additional experiments compare Stanley, LQR and NMPC, introduce a four-second GPS dropout, and reduce plant grip to 65% of the controller’s nominal model.",
+        body: "The committed Monza experiment covers 60 seconds and multiple corners, with 1.49 m RMS lateral error and zero track-limit violations. Additional experiments compare Stanley, LQR and NMPC, introduce a four-second GPS dropout, and reduce plant grip to 65% of the controller’s nominal model.",
       },
       {
         title: "From a working framework to a faster controller.",
@@ -200,7 +204,7 @@ export const projects: Project[] = [
     slug: "mems-pull-in",
     title: "MEMS Pull-In Analysis",
     category: "ENGINEERING ARCHIVE / ELECTROMECHANICS",
-    status: "Modelling & finite-element analysis",
+    status: "Course project · August 2026–present",
     summary:
       "Electrostatic pull-in in a parallel-plate actuator: a small device with a strongly nonlinear response.",
     tags: ["Nonlinear systems", "Electrostatics", "FEA", "Actuation"],
@@ -211,15 +215,78 @@ export const projects: Project[] = [
       },
       {
         title: "From device mechanics to actuation.",
-        body: "The project studies modelling and finite-element analysis of MEMS actuation structures, including loading and design-parameter sensitivity. It extends the same interest in dynamical behaviour down to sensing and actuation devices.",
+        body: "This Sensors and Actuators course project under Prof. Pradeep Dixit combines analytical electrostatic–spring equilibrium with coupled electrostatic–structural FEA. Gap, plate area and spring stiffness are varied to compare analytical pull-in predictions with simulation.",
       },
       {
         title: "Evidence and scope.",
-        body: "The supplied brief identifies the electrostatic parallel-plate pull-in topic; the CV supports MEMS finite-element modelling and design sensitivity. A public technical report is not yet linked, so numerical voltage thresholds and validation errors are deliberately omitted.",
+        body: "The revised résumé documents the parallel-plate pull-in analysis, coupled FEA and parametric comparisons. A public technical report is not yet linked, so numerical voltage thresholds and validation errors are deliberately omitted.",
       },
     ],
     limits:
       "No measured pull-in voltage or simulation accuracy is asserted without the corresponding public report.",
+  },
+  {
+    slug: "human-motion-estimation",
+    title: "Human Motion State Estimation",
+    category: "ENGINEERING ARCHIVE / SENSOR FUSION",
+    status: "Course project · January–April 2026",
+    summary:
+      "Markerless pose estimation and accelerometer measurements connect observed motion to joint mechanics.",
+    tags: ["MediaPipe Pose", "Sensor fusion", "Biomechanics"],
+    sections: [
+      {
+        title: "From images to joint mechanics.",
+        body: "Under Prof. Darshan Shah in Joint Biomechanics, a MediaPipe Pose pipeline extracted hip, knee and ankle keypoints from 24 images across six subjects and four static poses. Pose estimates were correlated with accelerometer data and compared against goniometer measurements.",
+      },
+      {
+        title: "A small, defined study.",
+        body: "The revised résumé reports correlation coefficients of r = 0.984 for angles and r = 0.990 for computed moments. Correlation describes agreement in variation; it is not a percentage accuracy or a substitute for absolute-error analysis.",
+      },
+    ],
+    limits:
+      "Résumé-reported course results from six subjects and static poses. No public dataset or report is linked; broader dynamic-motion or clinical performance is not established.",
+  },
+  {
+    slug: "stol-airfoil-design",
+    title: "STOL Aircraft & Airfoil Design",
+    category: "ENGINEERING ARCHIVE / AERODYNAMICS",
+    status: "Course project · January–April 2024",
+    summary:
+      "Airfoil analysis, computational flow and aircraft-level modelling for short takeoff performance.",
+    tags: ["ANSYS Fluent", "OpenVSP", "Thin Airfoil Theory"],
+    sections: [
+      {
+        title: "From an airfoil to an aircraft.",
+        body: "This Low Speed Aerodynamics project under Prof. Dhwanil Shukla combined NACA 5311 analysis in ANSYS Fluent, a Python Thin Airfoil Theory tool, and STOL aircraft modelling in OpenVSP with empirical drag methods.",
+      },
+      {
+        title: "Reported design outputs.",
+        body: "The revised résumé records a peak lift-to-drag ratio of 61.11, a stall angle of 15 degrees, a modelled takeoff distance of 157 m and an 8.3% increase in lift coefficient. These are course analysis outputs, not flight-test measurements.",
+      },
+    ],
+    limits:
+      "Résumé-grounded overview. Mesh studies, operating conditions and the reference configuration for the percentage improvement are not available in a public report.",
+  },
+  {
+    slug: "universal-testing-machine",
+    title: "Universal Testing Machine",
+    category: "ENGINEERING ARCHIVE / DESIGN & INSTRUMENTATION",
+    status: "Course project · August–November 2023",
+    summary:
+      "A student-built loading and measurement system for exploring material stiffness.",
+    tags: ["Mechanical design", "Arduino", "Instrumentation"],
+    sections: [
+      {
+        title: "Build, load, measure.",
+        body: "In a six-person Makerspace team guided by Prof. Joseph John and Prof. K. N. Jonnalagadda, I co-developed a Universal Testing Machine to estimate specimen Young’s modulus. A lead-screw transmission applied controlled loads.",
+      },
+      {
+        title: "Connecting mechanics to data.",
+        body: "Arduino UNO, an IR sensor and PWM supported force–displacement tracking and automated test-data generation. The project connected physical fabrication, actuation and measurement.",
+      },
+    ],
+    limits:
+      "Course prototype described in the revised résumé. No calibrated accuracy, certified testing capability or material-result dataset is claimed.",
   },
 ];
 export const projectHref = (p: Project) =>

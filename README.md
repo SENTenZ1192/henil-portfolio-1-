@@ -21,7 +21,7 @@ Next.js 16.3.8, React, TypeScript, Three.js, React Three Fiber and GSAP. Styling
 - `components/experience.tsx`: dated research and industry experience.
 - `app/about/page.tsx`: education, biography and skills.
 - `components/footer.tsx`: contact and social links.
-- `public/henil-parmar-cv.pdf`: replace with the latest approved CV at the same filename. Current source is the supplied local `Masters_Resume.pdf` (13 September 2026), selected because it includes the master's/controls portfolio. The newer general two-page résumé was inspected for experience verification but omits the core controls project coverage.
+- `public/henil-parmar-cv.pdf`: replace with the latest approved CV at the same filename. Current source is the user-supplied `Resume-Masters(Revised).pdf`, replaced byte-for-byte on 5 October 2026.
 - `public/project-media/`: actual repository plots converted to WebP. Replace an image and update its caption/source in the project record. Never treat the conceptual interactive charts or 3D models as measured results.
 - `app/globals.css`: colours, spacing, typography, responsive layouts and motion preferences.
 - `components/three/scene.tsx`: original illustrative satellite and generic Formula car geometry.
@@ -32,7 +32,7 @@ Next.js 16.3.8, React, TypeScript, Three.js, React Three Fiber and GSAP. Styling
 1. Push this clean repository to the intended GitHub repository. Do not force-push over earlier portfolio history.
 2. In Vercel, select Add New → Project and import that repository.
 3. Select Next.js, root directory `./`, build `npm run build`, install `npm ci`. No paid service is required.
-4. Set `NEXT_PUBLIC_SITE_URL` to the assigned production `https://…vercel.app` URL, then redeploy so sitemap and canonical metadata use it. Vercel's project production URL is used automatically when available.
+4. Set `NEXT_PUBLIC_SITE_URL` to the assigned production `https://…vercel.app` URL, then redeploy so sitemap and canonical metadata use it. The default canonical URL is https://henilparmar1208.vercel.app.
 5. Keep `main` as production. Other branches receive preview deployments once the Git integration is connected.
 6. Verify the homepage, all case studies, CV download, contact links and social metadata on the public URL.
 
@@ -51,3 +51,7 @@ The public master’s CV includes its existing phone contact; the site itself do
 ## Known scope
 
 The site is a portfolio, not a live numerical solver. The engineering sketch uses illustrative signals. Satellite and car geometry are stylized engineering illustrations. RLV, satellite LQR and MEMS pages are résumé/brief-grounded summaries, because no public result dataset/report was supplied for those studies. Add public reports/DOIs to the data records when available.
+
+## Published site
+
+https://henilparmar1208.vercel.app — free Vercel subdomain, connected to production. GitHub main deploys automatically.
