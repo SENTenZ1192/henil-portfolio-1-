@@ -23,8 +23,10 @@ export function WorkList() {
             (p, i) =>
               filter === "All work" ||
               (filter === "Motorsport" && i < 3) ||
-              (filter === "Aerospace" && (i === 3 || i === 4)) ||
-              (filter === "Archive" && i === 5),
+              (filter === "Aerospace" &&
+                (i === 3 || i === 4 || p.slug === "stol-airfoil-design")) ||
+              (filter === "Archive" &&
+                p.category.startsWith("ENGINEERING ARCHIVE")),
           )
           .map((p) => (
             <Link key={p.slug} href={projectHref(p)} className="work-row">
